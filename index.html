@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os de Atendimento - Continuação</title>
+    <link rel="stylesheet" href="Estilos/style-cont.css">
+    <script src="scripts/script-at.js" defer></script>
+    <script src="scripts/script-cont.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dados do Equipamento</h1>
+        <div class="entrada">
+            <div class="entrada_dados">
+                <p>Equipamento: </p> 
+                <select name="eqto" id="eqto">
+                    <option value="Selecione" selected>--- Selecione ---</option>
+                    <option value="Impressora">Impressora</option>
+                    <option value="Etiqueta">Etiqueta</option>
+                    <option value="SAT">SAT</option>
+                    <option value="MFE">MFE</option>
+                    <option value="Leitor">Leitor</option>
+                </select>
+                <p>Modelo: </p> 
+                <select name="modelo" id="modelo">
+                    <option value="-Selecione-" selected>--- Selecione ---</option>
+                    
+                </select>
+            </div>
+            <div class="entrada_btn">
+                <p id="verMais">Ver mais...</p>
+            </div>
+        </div>
+        <div class="saida">
+            <div class="saida_num">
+                <p>[</p> 
+                    <label for="num" id="num">1</label>
+                <p>]</p> 
+            </div>
+            <div class="saida_dados">
+                <p>Ticket: </p><input type="text" name="txtTicket" id="txtTicket">
+                <p>Nome: </p><input type="text" name="txtNome" id="txtNome">
+                <p>Telefone: </p><input type="tel" name="txtTel" id="txtTel">
+                <p>CNPJ: </p><input type="text" name="txtCNPJ" id="txtCNPJ">
+                <p>Modelo: </p><input type="text" name="txtModelo" id="txtModelo">
+                <p>Numero de Série: </p><input type="text" name="txtNSerie" id="txtNSerie">
+                <p>Erro: </p><input type="text" name="txtErro" id="txtErro">
+                <p>E-mail: </p><input type="email" name="txtEmail" id="txtEmail">
+            </div>
+            <div class="saida_btn">
+                <input type="button" class="btn" id="btn_processar" value="Processar Dados">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
